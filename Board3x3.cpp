@@ -1,4 +1,6 @@
 #include "Board3x3.h"
+#include <iostream>
+using namespace std;
 
 Board3x3::Board3x3() 
 {
@@ -22,11 +24,19 @@ void Board3x3::clearBoard()
 	}
 }
 
-bool Board3x3::isFull() 
+void Board3x3::print() 
 {
-	for (int i = 0; i < 3; i++) 
+	cout << "||" << aBoard[0][0] << "||" << aBoard[0][1] << "||"<< aBoard[0][2] << endl;
+	cout << "||" << aBoard[1][0] << "||" << aBoard[1][1] << "||"<< aBoard[1][2] << endl;
+	cout << "||" << aBoard[2][0] << "||" << aBoard[2][1] << "||"<< aBoard[2][2] << endl;
+	cout << endl;
+}
+
+bool Board3x3::isFull()
+{
+	for (int i = 0; i < 3; i++)
 	{
-		for (int j = 0; j < 3; j++) 
+		for (int j = 0; j < 3; j++)
 		{
 			if (aBoard[i][j] == '0')
 				return false;
@@ -35,11 +45,11 @@ bool Board3x3::isFull()
 	return true;
 }
 
-bool Board3x3::isEmpty() 
+bool Board3x3::isEmpty()
 {
-	for (int i = 0; i < 3; i++) 
+	for (int i = 0; i < 3; i++)
 	{
-		for (int j = 0; j < 3; j++) 
+		for (int j = 0; j < 3; j++)
 		{
 			if (aBoard[i][j] != '0')
 				return false;
@@ -80,7 +90,7 @@ char Board3x3::getSimilarPiecesVertically()
 
 char Board3x3::getSimilarPiecesDiagonally()
 {
-	if (aBoard[0][0] != '0' && aBoard[0][0] == aBoard[1][1] && aBoard[0][0] == aBoard[2][2]) 
+	if (aBoard[0][0] != '0' && aBoard[0][0] == aBoard[1][1] && aBoard[0][0] == aBoard[2][2])
 	{
 		return aBoard[0][0];
 	}
@@ -91,6 +101,6 @@ char Board3x3::getSimilarPiecesDiagonally()
 	}
 
 	else {
-		return 0;
+		return '0';
 	}
 }
