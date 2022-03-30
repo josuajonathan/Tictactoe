@@ -5,38 +5,45 @@ using namespace std;
 
 Player::Player()
 {
-	nama           = ' ';
-	jumlahmenang   = 0;
-	jumlahmatch    = 0;
+	nama       = ' ';
+	jmlhmenang = 0;
+	jmlhmatch  = 0;
 }
 
 Player::Player(string uname, int menang, int match)
 {
-	nama         = uname;
-	jumlahmenang = menang;
-	jumlahmatch  = match;
+	nama       = uname;
+	jmlhmenang = menang;
+	jmlhmatch  = match;
 }
 
-void Player::setnama(string nama) {
-	this->nama = nama;
+void Player::setnama(string uname)
+{
+	nama = uname;
 }
 
-string Player::getnama() {
+string Player::getnama()
+{
 	return nama;
 }
 
-void Player::setjumlahmenang(int jumlahmenang) {
-	this->jumlahmenang = jumlahmenang;
+void Player::setjmlhmenang(int menang)
+{
+	jmlhmenang = menang;
 }
 
-int Player::getjumlahmenang() {
-	return jumlahmenang;
+
+int Player::getjmlhmenang()
+{
+	return jmlhmenang;
 }
 
-void Player::setjumlahmatch(int jumlahmatch) {
-	this->jumlahmatch = jumlahmatch;
+void Player::setjmlhmatch(int match)
+{
+	jmlhmatch = match;
 }
 
-int Player::getjumlahmatch() {
-	return jumlahmatch;
+int Player::getjmlhmatch()
+{
+	return jmlhmatch;
 }
