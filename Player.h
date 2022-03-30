@@ -6,20 +6,20 @@ class Player
 {
 private:
 	string nama;
-	int jumlahmenang;
-	int jumlahmatch;
+	int jmlhmenang;
+	int jmlhmatch;
 
-public :
+public:
 	Player();
 	Player(string uname, int menang, int match);
 
 	void setnama(string uname);
 	string getnama();
 
-	void setjumlahmenang(int menang);
-	int getjumlahmenang();
+	void setjmlhmenang(int menang);
+	int getjmlhmenang();
 
-	void setjumlahmatch(int match);
-	int getjumlahmatch();
+	void setjmlhmatch(int match);
+	int getjmlhmatch();
 };
 
