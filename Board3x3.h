@@ -1,5 +1,6 @@
 #pragma once
-#include"Board.h"
+#include "Board.h"
+#include <iostream>
 
 class Board3x3:public Board
 {
@@ -21,3 +22,4 @@ public:
 	bool isFull();
 	bool isEmpty();
 };
+
