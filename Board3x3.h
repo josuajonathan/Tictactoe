@@ -1,8 +1,8 @@
 #pragma once
-#include "Board.h"
 #include <iostream>
+#include "Board.h"
 
-class Board3x3:public Board
+class Board3x3 : public Board
 {
 protected:
 	char aBoard[3][3];
@@ -10,7 +10,6 @@ protected:
 public:
 	Board3x3();
 	void clearBoard();
-	void print();
 
 	void setvalueAtIndex(int x, int y, char value);
 	char getvalueAtIndex(int x, int y);
@@ -22,4 +21,3 @@ public:
 	bool isFull();
 	bool isEmpty();
 };
-
