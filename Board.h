@@ -3,16 +3,15 @@
 class Board
 {
 public:
-	void clearBoard();
-	void print();
+	virtual void clearBoard();
 
-	void setvalueAtIndex(int x, int y, char value);
-	char getvalueAtIndex(int x, int y);
+	virtual void setvalueAtIndex(int, int, char);
+	virtual char getvalueAtIndex(int, int);
 
-	char getSimilarPiecesVertically();
-	char getSimilarPiecesHorizontally();
-	char getSimilarPiecesDiagonally();
+	virtual char getSimilarPiecesVertically();
+	virtual char getSimilarPiecesHorizontally();
+	virtual char getSimilarPiecesDiagonally();
 
-	bool isFull();
-	bool isEmpty();
+	virtual bool isFull();
+	virtual bool isEmpty();
 };
