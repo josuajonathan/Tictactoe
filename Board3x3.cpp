@@ -24,13 +24,17 @@ void Board3x3::clearBoard()
 	}
 }
 
-void Board3x3::print() 
+/*void Board3x3::print()
 {
-	cout << "||" << aBoard[0][0] << "||" << aBoard[0][1] << "||"<< aBoard[0][2] << endl;
-	cout << "||" << aBoard[1][0] << "||" << aBoard[1][1] << "||"<< aBoard[1][2] << endl;
-	cout << "||" << aBoard[2][0] << "||" << aBoard[2][1] << "||"<< aBoard[2][2] << endl;
-	cout << endl;
-}
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			cout << "||" << aBoard[0][0] << "||" << aBoard[0][1] << "||" << aBoard[0][2] << endl;
+			cout << "||" << aBoard[1][0] << "||" << aBoard[1][1] << "||" << aBoard[1][2] << endl;
+			cout << "||" << aBoard[2][0] << "||" << aBoard[2][1] << "||" << aBoard[2][2] << endl;
+			cout << endl;
+		}
+	}
+}*/
 
 bool Board3x3::isFull()
 {
